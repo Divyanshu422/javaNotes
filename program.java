@@ -145,18 +145,143 @@
 
 // *-------------------------------------------------------------------
 
-// !
-// class program {
-// public static void main(String[] args) {
-
-// }
-// }
+// ! Checking the intial capacity of arraylist
 
 // *-------------------------------------------------------------------
 
-// !
+// ! Main method overloading
+// class MainMethodOverloading {
+// public static void main(String[] args) {
+// System.out.println("This is the standard main method.");
+
+// }
+
+// public static void main(int num) {
+// System.out.println("This is an overloaded main method with an integer
+// parameter.");
+// System.out.println("Received number: " + num);
+// }
+
+// public static void main(String arg1, String arg2) {
+// System.out.println("This is another overloaded main method with two string
+// parameters.");
+// System.out.println("Received arguments: " + arg1 + " and " + arg2);
+// }
+// }
+
+// * ----------------------------------------------------------------------- */
+
+// ! Parsing the value -->>
+// class StringToIntegerConversion {
+// public static void main(String[] args) {
+// String numberStr = "42"; // A string containing an integer value
+
+// //* Using Integer.parseInt()
+// int parsedInt1 = Integer.parseInt(numberStr);
+// System.out.println("Using Integer.parseInt(): " + parsedInt1); // * 42
+
+// //* Using Integer.valueOf()
+// Integer parsedInt2 = Integer.valueOf(numberStr);
+// System.out.println("Using Integer.valueOf(): " + parsedInt2); // * 42
+// }
+// }
+
+// * ----------------------------------------------------------------------- */
+
+// ! Number format Exception
+// class NumberFormatExceptionExample {
+// public static void main(String[] args) {
+// //* Attempt to parse an invalid string as an integer
+// String invalidStr = "abc";
+
+// try {
+// int parsedInt = Integer.parseInt(invalidStr);
+// System.out.println("Parsed Integer: " + parsedInt);
+// } catch (NumberFormatException e) {
+// System.out.println("NumberFormatException occurred: " + e.getMessage());
+// }
+// }
+// }
+
+// //* Output: NumberFormatException occurred: For input string: "abc" */
+
+// * ----------------------------------------------------------------------- */
+
+// ! Call by Value
+// class program {
+
+// static void modifyValue(int x) {
+// x = 20; // * Changes the value of the parameter 'x' inside the function
+// System.out.println(x); // * 20
+// }
+
+// public static void main(String[] args) {
+// int value = 10;
+// modifyValue(value);
+// System.out.println(value); // * Output: 10 (unchanged)
+
+// }
+
+// }
+
+// * ----------------------------------------------------------------------- */
+
+// ! ◦ Call by reference
+// class program {
+
+// int x;
+
+// program(int x) {
+// this.x = x; // * Constructor */
+// }
+
+// void modifyValued(program obj) {
+// obj.x = 30;
+
+// }
+
+// public static void main(String[] args) {
+
+// program obj = new program(10);
+// obj.modifyValued(obj);
+// System.out.println(obj.x); // * 30
+
+// }
+
+// }
+
+// * ----------------------------------------------------------------------- */
+
 // class program {
 // public static void main(String[] args) {
 
 // }
+
+// }
+
+// * ----------------------------------------------------------------------- */
+
+// class program {
+// public static void main(String[] args) {
+
+// }
+
+// }
+
+// * ----------------------------------------------------------------------- */
+
+// class program {
+// public static void main(String[] args) {
+
+// }
+
+// }
+
+// * ----------------------------------------------------------------------- */
+
+// class program {
+// public static void main(String[] args) {
+
+// }
+
 // }
