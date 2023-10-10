@@ -118,9 +118,27 @@
 
 // ?-------------------------------------------------------------------
 
-// !What is the difference between == and equals()?
+// !What is the difference between == and equals()? -> it is related to object
 // class program {
 // public static void main(String[] args) {
+
+// // * == Operator
+// String str1 = new String("Hello");
+// String str2 = new String("Hello");
+// boolean areEqual = (str1 == str2); // * This will be false because str1 and
+// str2 refer to different objects.
+// System.out.println(areEqual); // Todo: False
+
+// // * equals():
+// boolean areEqual1 = str1.equals(str2); // * This will be true because the
+// equals() method in the String class is
+// // overridden to compare the content of the strings.
+// System.out.println(areEqual1); // Todo: true
+
+// // int a = 10;
+// // int b = a;
+// // System.out.println(a.equals(b)); //* Cant use with primitie dataType
+// // //! Error
 
 // }
 // }
